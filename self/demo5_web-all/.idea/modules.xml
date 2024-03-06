@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo01-web01/demo01-web01.iml" filepath="$PROJECT_DIR$/demo01-web01/demo01-web01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo02_servlet01/demo02_servlet01.iml" filepath="$PROJECT_DIR$/demo02_servlet01/demo02_servlet01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo03_servletConfigAndServletContext/demo03_servletConfigAndServletContext.iml" filepath="$PROJECT_DIR$/demo03_servletConfigAndServletContext/demo03_servletConfigAndServletContext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo04_forward_redirect/demo04_forward_redirect.iml" filepath="$PROJECT_DIR$/demo04_forward_redirect/demo04_forward_redirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo05_path/demo05_path.iml" filepath="$PROJECT_DIR$/demo05_path/demo05_path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo06_cookic_session/demo06_cookic_session.iml" filepath="$PROJECT_DIR$/demo06_cookic_session/demo06_cookic_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo07_attribute/demo07_attribute.iml" filepath="$PROJECT_DIR$/demo07_attribute/demo07_attribute.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo08_filters/demo08_filters.iml" filepath="$PROJECT_DIR$/demo08_filters/demo08_filters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo10_testAJX/demo10_testAJX.iml" filepath="$PROJECT_DIR$/demo10_testAJX/demo10_testAJX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/demo5_web-all.iml" filepath="$PROJECT_DIR$/.idea/demo5_web-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo9_listener/demo9_listener.iml" filepath="$PROJECT_DIR$/demo9_listener/demo9_listener.iml" />
+    </modules>
+  </component>
+</project>

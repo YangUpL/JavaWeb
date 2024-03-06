@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <script>
+        function loadXMLDoc(){
+            var xmlhttp = new XMLHttpRequest();
+            // 设置回调函数处理响应结果
+            xmlhttp.onreadystatechange=function(){
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    var text = document.getElementById("no1");
+                    text.value = xmlhttp.responseText;
+
+                    // window.location.href = "http://www.atguigu.com"
+
+                }
+            }
+            // 设置请求方式和请求的资源路径
+            //如果无上下文路径  加不加/都行
+            //如果有上下文路径  开头不加/
+            xmlhttp.open("GET","/demo10/servletA?username=zhangsan");
+            // 发送请求
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="no1">
+    <button onclick="loadXMLDoc()">按钮</button>
+</body>
+</html>

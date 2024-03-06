@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jdbc>
+    <dev id="id1">
+        <username>root</username>
+        <password>hhh318413085066</password>
+        <driver>com.mysql.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306
+            /book?\
+            useSSL=false&amp;\
+            serverTimezone=GMT%2B8&amp;\
+            rewriteBatchedStatements=true&amp;\
+            useUnicode=true&amp;\
+            characterEncoding=utf8</url>
+    </dev>
+
+    <test id="id2">
+        <username>root</username>
+        <password>hhh318413085066</password>
+        <driver>com.mysql.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306
+            /book?\
+            useSSL=false&amp;\
+            serverTimezone=GMT%2B8&amp;\
+            rewriteBatchedStatements=true&amp;\
+            useUnicode=true&amp;\
+            characterEncoding=utf8</url>
+    </test>
+
+    <formal id="id3">
+        <username>root</username>
+        <password>hhh318413085066</password>
+        <driver>com.mysql.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306
+            /book?\
+            useSSL=false&amp;\
+            serverTimezone=GMT%2B8&amp;\
+            rewriteBatchedStatements=true&amp;\
+            useUnicode=true&amp;\
+            characterEncoding=utf8</url>
+    </formal>
+</jdbc>

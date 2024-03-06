@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!--配置filter,并为filter起别名-->
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.yangRR.filters.LoginFilter</filter-class>
+    </filter>
+    <!--为别名对应的filter配置要过滤的目标资源-->
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <!--通过映射路径确定过滤资源-->
+        <url-pattern>/servlet1</url-pattern>
+        <!--通过后缀名确定过滤资源-->
+        <url-pattern>*.html</url-pattern>
+        <!--通过servlet别名确定过滤资源-->
+        <servlet-name>servlet1Name</servlet-name>
+
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>LifeCycleFilter</filter-name>
+        <filter-class>com.yangRR.filters.LifeCycleFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LifeCycleFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

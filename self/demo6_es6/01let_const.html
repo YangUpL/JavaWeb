@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //1. let只有在当前代码块有效代码块. 代码块、函数、全局
+        {
+          let a = 1
+          var b = 2
+        }   
+        console.log(a);  // a is not defined   花括号外面无法访问
+        console.log(b);  // 可以正常输出
+    
+        //2. 不能重复声明
+        let name = '天真'
+        // let name = '无邪'
+    
+        //3. 不存在变量提升（先声明，在使用）
+        console.log(test) //可以     但是值为undefined
+        var test = 'test'
+        // console.log(test1) //不可以  let命令改变了语法行为，它所声明的变量一定要在声明后使用，否则报错。
+        // let test1 = 'test1' 
+    
+    
+        //4、不会成为window的属性   
+        var a = 100
+        console.log(window.a) //100
+        // let b = 200
+        // console.log(window.b) //undefined
+    
+        //5. let优先推荐使用
+        for (let i = 0; i < 10; i++) {
+          // ...
+        }
+        // console.log(i);
+
+        //声明场景语法,建议变量名大写区分
+        const PI = 3.1415926;
+
+        //1.常量声明必须有初始化值
+        //const A ; //报错
+
+        //2.常量值不可以改动
+        //const A  = 'atguigu'
+        //A  = 'xx' //不可改动
+
+        //3.和let一样，块儿作用域
+        {
+            const A = 'atguigu'
+            console.log(A);
+        }
+        //console.log(A);
+
+        //4.对应数组和对象元素修改，不算常量修改，修改值，不修改地址
+        const TEAM = ['刘德华','张学友','郭富城'];
+        TEAM.push('黎明');
+        // TEAM=[] // 报错
+        console.log(TEAM)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

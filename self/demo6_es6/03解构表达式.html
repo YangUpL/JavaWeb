@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let [a, b, c,d = 50] = [1, 2, 3]; //新增变量名任意合法即可，本质是按照顺序进行初始化变量的值
+        console.log(a); // 1
+        console.log(b); // 2
+        console.log(c); // 3
+        console.log(d); // 50
+
+
+        let {e, f} = {e: 1, f: 2};
+        //新增变量名必须和属性名相同，本质是初始化变量的值为对象中同名属性的值
+        //等价于 let a = 对象.a  let b = 对象.b
+        
+        console.log(e); // 1
+        console.log(f); // 2
+
+        let {g: x, h: y} = {g: 1, h: 2};
+        console.log(x); // 1
+        console.log(y); // 2
+
+
+
+        function add([m, n,l = 9]) {
+            return m + n + l;
+        }
+        console.log(add([1, 2])); // 12
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
